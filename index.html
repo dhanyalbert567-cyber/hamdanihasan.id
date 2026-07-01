@@ -9,26 +9,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial,sans-serif;
     background:#111;
     color:#fff;
 }
 
+/* Banner */
 .banner{
     width:100%;
+    overflow:hidden;
+    background:#fff;
 }
 
 .banner img{
     width:100%;
+    height:auto;
     display:block;
 }
 
+/* Header */
 header{
-    padding:45px 20px;
-    text-align:center;
     background:#1b1b1b;
+    text-align:center;
+    padding:50px 20px;
 }
 
 .label{
@@ -36,82 +46,111 @@ header{
     font-size:16px;
     font-weight:bold;
     letter-spacing:3px;
-    margin-bottom:8px;
+    margin-bottom:10px;
     text-transform:uppercase;
 }
 
 h1{
-    margin:0;
-    font-size:38px;
+    font-size:42px;
+    margin-bottom:8px;
 }
 
 h3{
-    margin:5px 0 15px;
-    font-size:20px;
-    font-weight:normal;
+    font-size:22px;
     color:#ddd;
+    margin-bottom:20px;
+    font-weight:normal;
 }
 
 p{
-    max-width:650px;
-    margin:0 auto 25px;
-    line-height:1.6;
+    max-width:700px;
+    margin:0 auto 30px;
+    line-height:1.8;
+    color:#ccc;
 }
 
+/* Tombol */
 .btn{
     display:inline-flex;
     align-items:center;
-    gap:8px;
+    gap:10px;
     margin:8px;
-    padding:12px 22px;
+    padding:14px 26px;
     background:#d4af37;
     color:#111;
     text-decoration:none;
-    border-radius:30px;
+    border-radius:40px;
     font-weight:bold;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#f1cb55;
+    background:#f3c94c;
+    transform:translateY(-2px);
 }
 
 .btn i{
+    font-size:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+h1{
+    font-size:30px;
+}
+
+h3{
     font-size:18px;
+}
+
+p{
+    font-size:15px;
+}
+
+.btn{
+    display:flex;
+    justify-content:center;
+    width:90%;
+    margin:10px auto;
+}
 }
 </style>
 
 </head>
 <body>
 
-<!-- Banner -->
+<!-- Banner Utama -->
 <div class="banner">
-    <img src="IMG_20260630_190019.png" alt="Banner Website Desa Bonto Marannu">
+    <img src="1001043606.png" alt="Website Resmi Pemerintah Desa Bonto Marannu">
 </div>
 
 <header>
 
-    <div class="label">APARATUR DESA</div>
+<div class="label">APARATUR DESA</div>
 
-    <h1>Hamdani Hasan</h1>
+<h1>Hamdani Hasan</h1>
 
-    <h3>Kepala Seksi Pemerintahan</h3>
+<h3>Kepala Seksi Pemerintahan</h3>
 
-    <p>Berdedikasi melayani masyarakat Desa Bonto Marannu.</p>
+<p>
+Berdedikasi melayani masyarakat Desa Bonto Marannu
+dengan pelayanan yang cepat, transparan, dan penuh tanggung jawab.
+</p>
 
-    <a class="btn"
-       href="https://wa.me/6285211120567?text=Assalamu'alaikum%20Pak%20Hamdani"
-       target="_blank">
-       <i class="fa-brands fa-whatsapp"></i>
-       Hubungi WhatsApp
-    </a>
+<a class="btn"
+href="https://wa.me/6285211120567?text=Assalamu'alaikum%20Pak%20Hamdani"
+target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+Hubungi WhatsApp
+</a>
 
-    <a class="btn"
-       href="https://bontomarannu.com"
-       target="_blank">
-       <i class="fa-solid fa-globe"></i>
-       Website Desa
-    </a>
+<a class="btn"
+href="https://bontomarannu.com"
+target="_blank">
+<i class="fa-solid fa-globe"></i>
+Website Desa
+</a>
 
 </header>
 

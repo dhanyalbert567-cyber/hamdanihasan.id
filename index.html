@@ -2,118 +2,45 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hamdani Hasan</title>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HAMDANI HASAN | Aparatur Desa</title>
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#111;
-    color:#fff;
-}
-
-.banner{
-    width:100%;
-}
-
-.banner img{
-    width:100%;
-    display:block;
-}
-
-header{
-    padding:45px 20px;
-    text-align:center;
-    background:#1b1b1b;
-}
-
-.label{
-    color:#d4af37;
-    font-size:16px;
-    font-weight:bold;
-    letter-spacing:3px;
-    margin-bottom:8px;
-    text-transform:uppercase;
-}
-
-h1{
-    margin:0;
-    font-size:38px;
-}
-
-h3{
-    margin:5px 0 15px;
-    font-size:20px;
-    font-weight:normal;
-    color:#ddd;
-}
-
-p{
-    max-width:650px;
-    margin:0 auto 25px;
-    line-height:1.6;
-}
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    margin:8px;
-    padding:12px 22px;
-    background:#d4af37;
-    color:#111;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#f1cb55;
-}
-
-.btn i{
-    font-size:18px;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:linear-gradient(-45deg,#000,#111,#3d2f00,#c9a227,#111,#000);background-size:400% 400%;animation:bg 12s ease infinite;color:#fff}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+.wrap{max-width:480px;margin:auto;padding:20px}
+.card{margin:30px 0;background:rgba(20,20,20,.7);border:1px solid rgba(255,215,0,.3);border-radius:24px;padding:24px;text-align:center;backdrop-filter:blur(10px)}
+img{width:180px;height:180px;border-radius:50%;border:5px solid gold;object-fit:cover}
+h1{color:gold;margin:15px 0 5px}
+h3{color:#fff3b0}
+.marq{overflow:hidden;white-space:nowrap;margin:20px 0}
+.marq span{display:inline-block;padding-left:100%;animation:m 16s linear infinite}
+@keyframes m{to{transform:translateX(-100%)}}
+.btn{display:block;margin:12px 0;padding:14px;border-radius:14px;text-decoration:none;font-weight:bold}
+.wa{background:#25D366;color:#fff}
+.web{background:gold;color:#111}
+.footer{text-align:center;margin:30px 0;color:#ddd}
+label{display:inline-block;margin:15px;background:gold;color:#111;padding:10px 16px;border-radius:20px;cursor:pointer}
+input{display:none}
 </style>
-
 </head>
 <body>
-
-<!-- Banner -->
-<div class="banner">
-    <img src="IMG_20260630_190019.png" alt="Banner Website Desa Bonto Marannu">
+<div class="wrap">
+<div class="card">
+<img id="profile" src="https://i.imgur.com/4Z7Dz6o.png">
+<br>
+<label>📷 Ganti Foto<input type="file" id="up" accept="image/*"></label>
+<div>APARATUR DESA</div>
+<h1>HAMDANI HASAN</h1>
+<h3>Kepala Seksi Pemerintahan</h3>
+<div class="marq"><span>Berdedikasi melayani masyarakat Desa Bonto Marannu dengan integritas, profesionalisme, dan semangat kebersamaan.</span></div>
+<h2 style="color:gold">Layanan Desa Digital</h2>
+<a class="btn wa" href="https://wa.me/628521120567">WhatsApp: 08521120567</a>
+<a class="btn web" href="https://bontomarannu.com">bontomarannu.com</a>
 </div>
-
-<header>
-
-    <div class="label">APARATUR DESA</div>
-
-    <h1>Hamdani Hasan</h1>
-
-    <h3>Kepala Seksi Pemerintahan</h3>
-
-    <p>Berdedikasi melayani masyarakat Desa Bonto Marannu.</p>
-
-    <a class="btn"
-       href="https://wa.me/6285211120567?text=Assalamu'alaikum%20Pak%20Hamdani"
-       target="_blank">
-       <i class="fa-brands fa-whatsapp"></i>
-       Hubungi WhatsApp
-    </a>
-
-    <a class="btn"
-       href="https://bontomarannu.com"
-       target="_blank">
-       <i class="fa-solid fa-globe"></i>
-       Website Desa
-    </a>
-
-</header>
-
-</body>
-</html>
+<div class="footer"><b>Desa Bonto Marannu 2026</b><br>Melayani Setulus Hati</div>
+</div>
+<script>
+up.onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=x=>profile.src=x.target.result;r.readAsDataURL(f);}
+</script>
+</body></html>

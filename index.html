@@ -3,128 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>HAMDANI HASAN | Aparatur Desa</title>
-
-<meta property="og:image" content="https://i.imgur.com/4Z7Dz6o.png">
-
+<title>Hamdani Hasan - Aparatur Desa</title>
+<meta property="og:title" content="HAMDANI HASAN - Kasi Pemerintahan">
+<meta property="og:description" content="Aparatur Desa Bonto Marannu">
+<meta property="og:image" content="https://bontomarannu.com/images/hamdani.jpg">
 <style>
-body{
-    font-family:Arial;
-    background:linear-gradient(45deg,#000,#c9a227);
-    color:#fff;
-    margin:0;
-}
-
-.wrap{
-    max-width:480px;
-    margin:auto;
-    padding:20px;
-}
-
-.card{
-    background:#222;
-    padding:20px;
-    border-radius:20px;
-    text-align:center;
-}
-
-#profile{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-    border:4px solid gold;
-    border-radius:18px;
-}
-
-.btn{
-    display:block;
-    margin:12px 0;
-    padding:14px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.wa{
-    background:#25D366;
-    color:#fff;
-}
-
-.web{
-    background:gold;
-    color:#111;
-}
-
-/* Tombol Musik */
-.music-btn{
-    position:fixed;
-    bottom:15px;
-    left:50%;
-    transform:translateX(-50%);
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    border:none;
-    background:rgba(255,215,0,.95);
-    color:#111;
-    font-size:24px;
-    cursor:pointer;
-    box-shadow:0 0 15px rgba(255,215,0,.7);
-    z-index:999;
-    transition:.3s;
-}
-
-.music-btn:hover{
-    transform:translateX(-50%) scale(1.08);
-}
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff}
+.hero{height:55vh;background:url('https://bontomarannu.com/images/hamdani.jpg') center/cover no-repeat;position:relative}
+.hero:after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 180px rgba(0,0,0,.7)}
+.content{padding:20px;text-align:center}
+h1{font-size:42px;margin:0;background:linear-gradient(#111,#666);-webkit-background-clip:text;color:transparent;-webkit-text-stroke:2px #fff;text-shadow:0 0 10px red}
+h2,h3,p{margin:8px}
+.marquee{overflow:hidden;white-space:nowrap}
+.marquee span{display:inline-block;padding-left:100%;animation:m 15s linear infinite}
+@keyframes m{to{transform:translateX(-100%)}}
+a.btn{display:block;margin:12px auto;padding:12px;max-width:320px;background:#25D366;color:#fff;text-decoration:none;border-radius:8px}
+.web{background:#0a84ff}
+footer{padding:25px;text-align:center;color:#ccc}
 </style>
 </head>
-
 <body>
-
-<div class="wrap">
-<div class="card">
-
-<img id="profile" src="https://i.imgur.com/4Z7Dz6o.png">
-
+<div class="hero"></div>
+<div class="content">
+<div>APARATUR DESA</div>
 <h1>HAMDANI HASAN</h1>
-<h3>Kepala Seksi Pemerintahan</h3>
-
-<p>Berdedikasi melayani masyarakat Desa Bonto Marannu.</p>
-
-<a class="btn wa" href="https://wa.me/628521120567?text=Assalamu%20Alaikum%20Pak%20Hamdani">
-📱 WhatsApp
-</a>
-
-<a class="btn web" href="https://bontomarannu.com">
-🌐 bontomarannu.com
-</a>
-
-<audio id="musik" loop>
-    <source src="musik.mp3" type="audio/mpeg">
-</audio>
-
+<div>KASI PEMERINTAHAN</div>
+<div class="marquee"><span>Berdedikasi melayani masyarakat Desa Bonto Marannu dengan integritas, profesionalisme dan semangat kebersamaan.</span></div>
+<a class="btn" href="https://wa.me/6285211120567?text=Assalamu%20Alaikum%20Pak%20Hamdani%20Hasan">📱 085 211 120 567</a>
+<a class="btn web" href="https://bontomarannu.com">🌐 bontomarannu.com</a>
 </div>
-</div>
-
-<!-- Tombol Musik Lingkaran -->
-<button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
-
-<script>
-const musik=document.getElementById("musik");
-const btn=document.getElementById("musicBtn");
-
-function toggleMusic(){
-    if(musik.paused){
-        musik.play();
-        btn.innerHTML="⏸";
-    }else{
-        musik.pause();
-        btn.innerHTML="🎵";
-    }
-}
-</script>
-
-</body>
-</html>
+<footer><h3>Desa Digital</h3><div>Bonto Marannu 2026</div><div>Melayani setulus hati</div></footer>
+</body></html>
